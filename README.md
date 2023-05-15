@@ -35,5 +35,6 @@ In the main root folder:
    kind create cluster
 
 2. Deploy the containers under manifests folder:
-   kubectl apply -f deployments.yaml
+   kubectl apply -f deployments.yaml # scale down / up and update rollingStrategy for canary or blue/green testing
    kubectl apply -f services.yaml
+   kubectl apply -f ingress.yaml
