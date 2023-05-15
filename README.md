@@ -31,9 +31,10 @@ In the main root folder:
            curl http://127.0.0.1:8080/
 
 # Running the container app simulating kubernetes via Kind:
-1. Create new kubernetes cluster:
-   kind create cluster
+1. Create new kubernetes cluster simulation:
+   ./kind_k8s_simulation/simulate_k8s.sh
 
 2. Deploy the containers under manifests folder:
-   kubectl apply -f deployments.yaml
+   kubectl apply -f deployments.yaml # scale down / up and update rollingStrategy for canary or blue/green testing
    kubectl apply -f services.yaml
+   kubectl apply -f ingress.yaml

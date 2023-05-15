@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: philthegreat
-          image: localhost/philthegreat:v1
+          image: philipkupsch/adjustphilthegreat:v1
           ports:
             - containerPort: 8000
