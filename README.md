@@ -32,7 +32,7 @@ In the main root folder:
 
 # Running the container app simulating kubernetes via Kind:
 1. Create new kubernetes cluster simulation:
-   kind create cluster --config cluster.yaml
+   ./kind_k8s_simulation/simulate_k8s.sh
 
 2. Deploy the containers under manifests folder:
    kubectl apply -f deployments.yaml # scale down / up and update rollingStrategy for canary or blue/green testing
