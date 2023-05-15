@@ -29,3 +29,11 @@ In the main root folder:
 
         6. If both step4 and step5 looks good, you can curl or use browser to for GET request on / path:
            curl http://127.0.0.1:8080/
+
+# Running the container app simulating kubernetes via Kind:
+1. Create new kubernetes cluster:
+   kind create cluster
+
+2. Deploy the containers under manifests folder:
+   kubectl apply -f deployments.yaml
+   kubectl apply -f services.yaml
